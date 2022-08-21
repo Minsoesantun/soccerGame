@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+}
+.App {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    margin: 3vh;
+}
+img {
+    width: 20vw;
+    max-width: 20vw;
+}
+button {
+    width: 20vw;
+    background-color: greenyellow;
+    height: 3vh;
+}
+button:hover {
+    background-color: green;
+    cursor: pointer;
+}
+.team {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(blue, red);
+    text-align: center;
+    flex: 1;
+    max-width: 25vw;
+}
+@media only screen and (max-width: 600px) {
+    .App {
+        flex-direction: column;
+        
+    }
+    .team {
+        max-width: 100%;
+        min-width: 170px;
+    }
+  }
